@@ -9,11 +9,16 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
   margin: 0;
+  padding: 0;
+  positoin: relative;
+}
+
+.centered-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

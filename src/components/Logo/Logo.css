@@ -1,0 +1,13 @@
+#logo_container {
+  height: 250px;
+  width: 250px;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#logo_img {
+  height: 100%;
+  width: 100%;
+}
