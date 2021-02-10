@@ -19,3 +19,11 @@
   top: 25rem;
   left: 25%;
 }
+
+#logo_img.sm {
+  height: 25%;
+  width: 25%;
+  position: absolute;
+  top: -8rem;
+  right: -3.6rem;
+}

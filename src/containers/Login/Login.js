@@ -4,6 +4,8 @@ import Logo from "../../components/Logo/Logo";
 import "./Login.css";
 
 class Login extends Component {
+  handleLogin = () => this.props.history.push("/welcome/user");
+
   render() {
     return (
       <div>
@@ -38,7 +40,7 @@ class Login extends Component {
           </Form.Group>
         </div>
         <div className="mb-2 centered-button login-button">
-          <Button variant="primary" size="lg">
+          <Button variant="primary" size="lg" onClick={this.handleLogin}>
             Login
           </Button>
         </div>

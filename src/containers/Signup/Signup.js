@@ -3,6 +3,8 @@ import { InputGroup, FormControl, Button } from "react-bootstrap";
 import "./Signup.css";
 
 class Signup extends Component {
+  handleSubmit = () => this.props.history.push("/welcome/new");
+
   render() {
     return (
       <div>
@@ -73,7 +75,7 @@ class Signup extends Component {
           </InputGroup>
         </div>
         <div className="mb-2 centered-button home-button">
-          <Button variant="primary" size="lg">
+          <Button variant="primary" size="lg" onClick={this.handleSubmit}>
             Submit
           </Button>
         </div>
