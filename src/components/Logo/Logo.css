@@ -11,3 +11,11 @@
   height: 100%;
   width: 100%;
 }
+
+#logo_img.md {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 25rem;
+  left: 25%;
+}

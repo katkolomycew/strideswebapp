@@ -10,7 +10,7 @@ class Logo extends Component {
           src={LogoImg}
           alt="strides_logo"
           id="logo_img"
-          style={this.props.customisedStyle}
+          className={this.props.imgSize}
         />
       </div>
     );

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
 import Logo from "../../components/Logo/Logo";
 import "./Home.css";
 
