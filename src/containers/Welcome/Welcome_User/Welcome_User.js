@@ -1,10 +1,35 @@
 import React, { Component } from "react";
+import Button from "react-bootstrap/Button";
+import FooterMenu from "../../../components/FooterMenu/FooterMenu";
+import Logo from "../../../components/Logo/Logo";
+import UserIcon from "../../../components/UserIcon/UserIcon";
+import "./Welcome_User.css";
+import "../Welcome_New/Welcome_New.css";
 
 class Welcome_User extends Component {
   render() {
     return (
-      <div>
-        <h1>test</h1>
+      <div id="welcome-user_wrapper">
+        <UserIcon />
+        <Logo imgSize="sm" />
+        <h1 className="welcome-title" style={{ top: "6rem" }}>
+          Hello Rachel!
+        </h1>
+        <div className="training-wrapper" style={{ top: "10rem" }}>
+          Today's Activity
+        </div>
+        <div id="welcome-user_activity">
+          <i class="fas fa-walking"></i>
+          <small>
+            20 Min <br /> Run <br /> Easy Pace
+          </small>
+        </div>
+        <div className="mb-2 centered-button">
+          <Button variant="primary" size="lg" id="start-button">
+            Start
+          </Button>
+        </div>
+        <FooterMenu />
       </div>
     );
   }

@@ -8,18 +8,18 @@ class FooterMenu extends Component {
       <div>
         <Nav className="justify-content-center">
           <Nav.Item>
-            <i class="far fa-calendar-alt footer-icon"></i>
+            <i className="far fa-calendar-alt footer-icon"></i>
             <Nav.Link href="/">My Plans</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link href="/" eventKey="link-1">
-              <i class="fas fa-chart-line footer-icon"></i>
+              <i className="fas fa-chart-line footer-icon"></i>
               Achievements
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link hreef="/" eventKey="link-2">
-              <i class="fas fa-users footer-icon"></i>
+              <i className="fas fa-users footer-icon"></i>
               Community
             </Nav.Link>
           </Nav.Item>

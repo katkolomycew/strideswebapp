@@ -11,7 +11,7 @@ class Welcome_New extends Component {
       <div id="welcome-new_wrapper">
         <UserIcon />
         <Logo imgSize="sm" />
-        <h1 id="welcome-title">Hello Rachel!</h1>
+        <h1 className="welcome-title">Hello Rachel!</h1>
         <div className="training-wrapper">
           You don't have a training plan yet
         </div>

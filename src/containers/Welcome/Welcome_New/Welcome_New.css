@@ -4,7 +4,7 @@
   background-color: #b8ebb8;
 }
 
-#welcome-title {
+.welcome-title {
   position: absolute;
   top: 7.5rem;
   left: 4.5rem;
