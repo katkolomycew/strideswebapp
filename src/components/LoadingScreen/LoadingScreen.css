@@ -1,0 +1,59 @@
+#loading-screen_wrapper {
+  width: 375px;
+  height: 667px;
+  background-color: #b8ebb8;
+  position: absolute;
+}
+
+#loading-screen_loading {
+  background-color: #84d384;
+  font-style: italic;
+  position: absolute;
+  top: 14rem;
+  height: 10rem;
+  width: 100%;
+}
+
+#loading-screen_loading small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  color: #ffffff;
+  animation: transition 5s infinite;
+  transition: all 5s ease-in-out;
+}
+
+@keyframes transition {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  20% {
+    transform: translate(40px, 0);
+  }
+
+  40% {
+    transform: translate(80px, 0);
+  }
+
+  60% {
+    transform: translate(120px, 0);
+  }
+
+  80% {
+    transform: translate(160px, 0);
+  }
+
+  100% {
+    transform: translate(200px, 0);
+  }
+}
+
+#loading-screen_text {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  position: relative;
+  top: 65%;
+  left: 2.5rem;
+}
