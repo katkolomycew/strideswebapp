@@ -1,0 +1,24 @@
+.justify-content-center {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-top: 1px solid #000000;
+  padding-top: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.justify-content-center a {
+  color: #000000;
+  font-style: italic;
+}
+
+.justify-content-center a:hover {
+  font-weight: 600;
+}
+
+.footer-icon {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
