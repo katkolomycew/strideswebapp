@@ -6,10 +6,12 @@ import UserIcon from "../../../components/UserIcon/UserIcon";
 import "./Welcome_New.css";
 
 class Welcome_New extends Component {
+  handleDetails = () => this.props.history.push("/profile/account");
+
   render() {
     return (
       <div id="welcome-new_wrapper">
-        <UserIcon />
+        <UserIcon profileRoute={this.handleDetails} iconSize="sm" />
         <Logo imgSize="sm" />
         <h1 className="welcome-title">Hello Rachel!</h1>
         <div className="training-wrapper">

@@ -22,3 +22,25 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.profile-icon.sm {
+  font-size: 2.25rem;
+  background-color: #ffffff;
+  padding: 0.75rem;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+}
+
+.profile-icon.lg {
+  font-size: 6rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  position: absolute;
+  top: 6rem;
+  left: 30%;
+}

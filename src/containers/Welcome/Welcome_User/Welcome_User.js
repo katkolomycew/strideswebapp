@@ -7,10 +7,12 @@ import "./Welcome_User.css";
 import "../Welcome_New/Welcome_New.css";
 
 class Welcome_User extends Component {
+  handleDetails = () => this.props.history.push("/profile/account");
+
   render() {
     return (
       <div id="welcome-user_wrapper">
-        <UserIcon />
+        <UserIcon profileRoute={this.handleDetails} iconSize="sm" />
         <Logo imgSize="sm" />
         <h1 className="welcome-title" style={{ top: "6rem" }}>
           Hello Rachel!

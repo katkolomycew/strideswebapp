@@ -1,11 +1,14 @@
 import React, { Component } from "react";
-import "./UserIcon.css";
+import "../../index.css";
 
 class UserIcon extends Component {
   render() {
     return (
       <div>
-        <i className="far fa-user" id="user-icon"></i>
+        <i
+          className={`far fa-user profile-icon ${this.props.iconSize}`}
+          onClick={this.props.profileRoute}
+        ></i>
       </div>
     );
   }
