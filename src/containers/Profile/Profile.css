@@ -33,68 +33,71 @@
   font-size: 1.75rem;
   font-weight: bold;
   position: relative;
-  top: 5rem;
+  top: 6rem;
 }
 
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  top: 5rem;
-  left: 18rem;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
+/* Notifications tag */
+.notifications_tag {
   position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  font-weight: 600;
+  left: 2rem;
 }
 
-.slider:before {
+.notifications_tag.push {
+  top: 11rem;
+}
+
+.notifications_tag.text {
+  top: 21rem;
+}
+
+.notifications_tag.email {
+  top: 31rem;
+}
+
+/* Notifications group */
+.notifications_group {
   position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  left: 2rem;
 }
 
-input:checked + .slider {
-  background-color: #4d854d;
+.notifications_group.push {
+  top: 12.5rem;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #4d854d;
+.notifications_group.text {
+  top: 22.5rem;
 }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+.notifications_group.email {
+  top: 32.5rem;
 }
 
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
+/* Notifications toggle */
+.notifications_toggle {
+  position: absolute;
+  width: 2rem;
+  right: 3rem;
 }
 
-.slider.round:before {
-  border-radius: 50%;
+.notifications_toggle.push {
+  top: 12rem;
+}
+
+.notifications_toggle.text {
+  top: 22rem;
+}
+
+.notifications_toggle.email {
+  top: 32rem;
+}
+
+/* Bootstrap button overriden classes */
+.btn-success,
+.btn-light {
+  border-radius: 5rem;
+}
+
+.switch-handle {
+  left: -0.75rem;
 }

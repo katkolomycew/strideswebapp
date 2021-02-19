@@ -40,8 +40,8 @@ class App extends Component {
               path="/profile/notifications"
               component={Profile_Notifications}
             />
-            <Route path="/profile/account-details" />
-            <Route path="/profile/privacy-data" />
+            <Route path="/profile/details" />
+            <Route path="/profile/privacy" />
           </Switch>
         </Router>
       </div>

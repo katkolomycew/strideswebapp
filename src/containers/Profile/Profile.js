@@ -8,7 +8,7 @@ import "./Profile.css";
 class Profile extends Component {
   render() {
     return (
-      <div classname="profile_wrapper">
+      <div className="profile_wrapper">
         <ReturnIcon />
         <Logo imgSize="sm" />
         <UserIcon iconSize="lg" />
@@ -25,7 +25,12 @@ class Profile extends Component {
           </Button>
         </div>
         <div className="mb-2 centered-button">
-          <Button variant="primary" size="lg" className="profile-button">
+          <Button
+            variant="primary"
+            size="lg"
+            className="profile-button"
+            href="/profile/details"
+          >
             Account Details
           </Button>
         </div>
