@@ -35,7 +35,12 @@ class Profile extends Component {
           </Button>
         </div>
         <div className="mb-2 centered-button">
-          <Button variant="primary" size="lg" className="profile-button">
+          <Button
+            variant="primary"
+            size="lg"
+            className="profile-button"
+            href="/profile/privacy"
+          >
             Privacy and Data
           </Button>
         </div>

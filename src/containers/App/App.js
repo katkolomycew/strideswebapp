@@ -6,6 +6,7 @@ import Login from "../Login/Login";
 import Profile from "../Profile/Profile";
 import Profile_AccountDetails from "../Profile/Profile_AccountDetails/Profile_AccountDetails";
 import Profile_Notifications from "../Profile/Profile_Notifications/Profile_Notifications";
+import Profile_PrivacyData from "../Profile/Profile_PrivacyData/Profile_PrivacyData";
 import Signup from "../Signup/Signup";
 import Welcome_New from "../Welcome/Welcome_New/Welcome_New";
 import Welcome_User from "../Welcome/Welcome_User/Welcome_User";
@@ -42,7 +43,7 @@ class App extends Component {
               component={Profile_Notifications}
             />
             <Route path="/profile/details" component={Profile_AccountDetails} />
-            <Route path="/profile/privacy" />
+            <Route path="/profile/privacy" component={Profile_PrivacyData} />
           </Switch>
         </Router>
       </div>
