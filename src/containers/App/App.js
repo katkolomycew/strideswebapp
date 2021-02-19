@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import LoadingScreen from "../../components/LoadingScreen/LoadingScreen";
 import Login from "../Login/Login";
 import Profile from "../Profile/Profile";
+import Profile_AccountDetails from "../Profile/Profile_AccountDetails/Profile_AccountDetails";
 import Profile_Notifications from "../Profile/Profile_Notifications/Profile_Notifications";
 import Signup from "../Signup/Signup";
 import Welcome_New from "../Welcome/Welcome_New/Welcome_New";
@@ -40,7 +41,7 @@ class App extends Component {
               path="/profile/notifications"
               component={Profile_Notifications}
             />
-            <Route path="/profile/details" />
+            <Route path="/profile/details" component={Profile_AccountDetails} />
             <Route path="/profile/privacy" />
           </Switch>
         </Router>

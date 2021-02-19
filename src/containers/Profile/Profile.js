@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import Logo from "../../components/Logo/Logo";
-import UserIcon from "../../components/UserIcon/UserIcon";
 import ReturnIcon from "../../components/ReturnIcon/ReturnIcon";
+import UserIcon from "../../components/UserIcon/UserIcon";
 import "./Profile.css";
 
 class Profile extends Component {

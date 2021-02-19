@@ -28,6 +28,17 @@
   left: 46.5%;
 }
 
+#profile_username-change {
+  font-size: 1rem;
+  position: relative;
+  top: 17.5rem;
+  left: 37.5%;
+}
+
+#details-btn_wrapper {
+  padding: 22rem 2rem;
+}
+
 #profile-notifications_title {
   text-align: center;
   font-size: 1.75rem;
