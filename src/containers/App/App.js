@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Achievements_All from "../Achievements/Achievements_All/Achievements_All";
 import Achievements_Timeline from "../Achievements/Achievements_Timeline/Achievements_Timeline";
 import Home from "../Home/Home";
 import LoadingScreen from "../../components/LoadingScreen/LoadingScreen";
@@ -48,6 +49,7 @@ class App extends Component {
               path="/achievements/timeline"
               component={Achievements_Timeline}
             />
+            <Route path="/achievements/all" component={Achievements_All} />
           </Switch>
         </Router>
       </div>

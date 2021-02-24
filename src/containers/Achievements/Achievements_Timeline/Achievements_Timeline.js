@@ -13,14 +13,14 @@ class Achievements_Timeline extends Component {
         <i className="fas fa-chart-line achievements-icon"></i>
         <h1 id="achievements-title">Achievements</h1>
         <div className="temporary-timeline"></div>
-        <h1 id="awards-title">Awards</h1>
+        <h1 className="awards-title">Awards</h1>
         <div className="awards-icon_wrapper">
           <i className="fas fa-award award"></i>
           <i className="fas fa-medal award"></i>
           <i className="fas fa-trophy award"></i>
-          <p>
+          <a href="/achievements/all">
             See <br /> More
-          </p>
+          </a>
         </div>
         <div className="awards-names_wrapper">
           <small>Mood Boost</small>
