@@ -1,0 +1,29 @@
+#logo_container {
+  height: 250px;
+  width: 250px;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#logo_img {
+  height: 100%;
+  width: 100%;
+}
+
+#logo_img.md {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 25rem;
+  left: 25%;
+}
+
+#logo_img.sm {
+  height: 25%;
+  width: 25%;
+  position: absolute;
+  top: -8rem;
+  right: -3.6rem;
+}

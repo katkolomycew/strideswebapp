@@ -1,0 +1,18 @@
+.form-check {
+  top: 1rem;
+  right: -10rem;
+  display: inline-block;
+}
+
+.form-check-input {
+  margin-left: 7rem;
+}
+
+.login-button {
+  position: relative;
+  bottom: -4.5rem;
+}
+
+.btn {
+  width: 81%;
+}

@@ -1,0 +1,36 @@
+#welcome-user_wrapper {
+  width: 375px;
+  height: 667px;
+  background-color: #b8ebb8;
+}
+
+#welcome-user_activity {
+  padding: 25px 0;
+  font-style: italic;
+  position: absolute;
+  top: 16rem;
+  left: 2.25rem;
+  width: 300px;
+}
+
+#welcome-user_activity .fas {
+  position: relative;
+  left: 1rem;
+  font-size: 10rem;
+}
+
+#welcome-user_activity small {
+  color: #000000;
+  font-size: 1.25rem;
+  text-align: left;
+  position: absolute;
+  top: 28%;
+  left: 60%;
+}
+
+#start-button {
+  background-color: #ffffff;
+  border-color: #000000;
+  position: relative;
+  top: 30rem;
+}
