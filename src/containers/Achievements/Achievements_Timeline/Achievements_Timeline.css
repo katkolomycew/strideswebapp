@@ -1,0 +1,88 @@
+.achievements_wrapper {
+  width: 375px;
+  height: 667px;
+  background-color: #b8ebb8;
+}
+
+.achievements-icon {
+  font-size: 5rem;
+  position: relative;
+  top: 5rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#achievements-title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  position: relative;
+  top: 5.5rem;
+}
+
+.temporary-timeline {
+  background-color: #fff;
+  position: relative;
+  height: 150px;
+  width: 90%;
+  top: 6rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#awards-title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  position: relative;
+  top: 7rem;
+}
+
+.awards-icon_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 7.5rem;
+}
+
+.award {
+  font-size: 5rem;
+  margin: 0 0.25rem;
+}
+
+.award small {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.awards-icon_wrapper p {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  position: relative;
+  top: 0.75rem;
+  font-weight: bold;
+}
+
+.awards-names_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 275px;
+  position: relative;
+  top: 7.5rem;
+  left: 0.25rem;
+  font-style: italic;
+}
+
+.achievements-button {
+  background-color: #fff !important;
+  border-color: #000000;
+  border-radius: 8rem;
+  font-size: 1.25rem;
+  position: absolute;
+  bottom: 1.5rem;
+}

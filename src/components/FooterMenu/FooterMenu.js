@@ -12,13 +12,13 @@ class FooterMenu extends Component {
             <Nav.Link href="/">My Plans</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/" eventKey="link-1">
+            <Nav.Link href="/achievements/timeline" eventKey="link-1">
               <i className="fas fa-chart-line footer-icon"></i>
               Achievements
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link hreef="/" eventKey="link-2">
+            <Nav.Link href="/" eventKey="link-2">
               <i className="fas fa-users footer-icon"></i>
               Community
             </Nav.Link>
