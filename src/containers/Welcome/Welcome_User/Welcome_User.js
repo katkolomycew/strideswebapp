@@ -21,7 +21,7 @@ class Welcome_User extends Component {
           Today's Activity
         </div>
         <div id="welcome-user_activity">
-          <i class="fas fa-walking"></i>
+          <i className="fas fa-walking"></i>
           <small>
             20 Min <br /> Run <br /> Easy Pace
           </small>

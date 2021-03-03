@@ -46,7 +46,7 @@ class Achievements_Timeline extends Component {
             variant="primary"
             size="lg"
             className="achievements-button"
-            href="/profile/account"
+            href={timelineURL ? "/achievements/share" : "/welcome/user"}
           >
             {timelineURL ? "Share Report" : "Confirm and Share"}
           </Button>
