@@ -69,7 +69,8 @@
   font-weight: bold;
 }
 
-.awards-names_wrapper {
+.awards-names_wrapper,
+.continue-share_names {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -80,11 +81,15 @@
   font-style: italic;
 }
 
+.continue-share_names {
+  left: 2rem;
+}
+
 .achievements-button {
   background-color: #fff !important;
   border-color: #000000;
   border-radius: 8rem;
-  font-size: 1.25rem;
+  font-size: 1.3rem !important;
   position: absolute;
   bottom: 1.5rem;
 }

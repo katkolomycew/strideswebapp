@@ -87,7 +87,7 @@ class Achievements_Share extends Component {
             variant="primary"
             size="lg"
             className="share-button"
-            href="/achievements/share/continue"
+            href="/achievements/continue"
           >
             Continue
           </Button>

@@ -52,7 +52,7 @@ class App extends Component {
             <Route path="/achievements/all" component={Achievements_All} />
             <Route path="/achievements/share" component={Achievements_Share} />
             <Route
-              path="/achievements/timeline"
+              path={["/achievements/timeline", "/achievements/continue"]}
               component={Achievements_Timeline}
             />
           </Switch>

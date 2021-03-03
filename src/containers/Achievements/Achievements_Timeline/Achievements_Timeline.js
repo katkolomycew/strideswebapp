@@ -4,6 +4,8 @@ import Logo from "../../../components/Logo/Logo";
 import ReturnIcon from "../../../components/ReturnIcon/ReturnIcon";
 import "./Achievements_Timeline.css";
 
+const timelineURL = window.location.href.includes("timeline");
+
 class Achievements_Timeline extends Component {
   render() {
     return (
@@ -11,18 +13,28 @@ class Achievements_Timeline extends Component {
         <ReturnIcon />
         <Logo imgSize="sm" />
         <i className="fas fa-chart-line achievements-icon"></i>
-        <h1 id="achievements-title">Achievements</h1>
+        <h1 id="achievements-title">
+          {timelineURL ? "Achievements" : "Rachel's Achievements"}
+        </h1>
         <div className="temporary-timeline"></div>
-        <h1 className="awards-title">Awards</h1>
+        <h1 className="awards-title">
+          {timelineURL ? "Awards" : "Top Awards"}
+        </h1>
         <div className="awards-icon_wrapper">
           <i className="fas fa-award award"></i>
           <i className="fas fa-medal award"></i>
           <i className="fas fa-trophy award"></i>
-          <a href="/achievements/all">
-            See <br /> More
-          </a>
+          {timelineURL ? (
+            <a href="/achievements/all">
+              See <br /> More
+            </a>
+          ) : null}
         </div>
-        <div className="awards-names_wrapper">
+        <div
+          className={
+            timelineURL ? "awards-names_wrapper" : "continue-share_names"
+          }
+        >
           <small>Mood Boost</small>
           <small>Perfect Week</small>
           <small>
@@ -34,9 +46,9 @@ class Achievements_Timeline extends Component {
             variant="primary"
             size="lg"
             className="achievements-button"
-            href="/achievements/share"
+            href="/profile/account"
           >
-            Share Report
+            {timelineURL ? "Share Report" : "Confirm and Share"}
           </Button>
         </div>
       </div>
