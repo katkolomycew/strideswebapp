@@ -1,0 +1,45 @@
+#share-form_wrapper {
+  position: relative;
+  top: -6rem;
+  left: -8rem;
+  width: 80%;
+}
+
+#share-title {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 22.5rem;
+  left: 2rem;
+}
+
+#share-message {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 28rem;
+  left: 2rem;
+}
+
+#share-message_wrapper {
+  position: relative;
+  top: -3.5rem;
+  padding: 0 2rem;
+}
+
+#share-message_wrapper .card-body {
+  max-height: 90px;
+  overflow-y: scroll;
+}
+
+.share-button {
+  background-color: #fff !important;
+  border-color: #000000;
+  border-radius: 8rem;
+  font-size: 1.3rem !important;
+  height: 55px;
+  position: absolute;
+  bottom: 1.5rem;
+}

@@ -30,7 +30,12 @@ class Achievements_Timeline extends Component {
           </small>
         </div>
         <div className="mb-2 centered-button">
-          <Button variant="primary" size="lg" className="achievements-button">
+          <Button
+            variant="primary"
+            size="lg"
+            className="achievements-button"
+            href="/achievements/share"
+          >
             Share Report
           </Button>
         </div>

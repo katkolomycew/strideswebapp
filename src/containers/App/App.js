@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Achievements_All from "../Achievements/Achievements_All/Achievements_All";
+import Achievements_Share from "../Achievements/Achievements_Share/Achievements_Share";
 import Achievements_Timeline from "../Achievements/Achievements_Timeline/Achievements_Timeline";
 import Home from "../Home/Home";
 import LoadingScreen from "../../components/LoadingScreen/LoadingScreen";
@@ -33,23 +34,27 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
+
             {/* Welcome screens nav */}
             <Route path="/welcome/new" component={Welcome_New} />
             <Route path="/welcome/user" component={Welcome_User} />
+
             {/* Profile nav screens*/}
             <Route path="/profile/account" component={Profile} />
+            <Route path="/profile/details" component={Profile_AccountDetails} />
+            <Route path="/profile/privacy" component={Profile_PrivacyData} />
             <Route
               path="/profile/notifications"
               component={Profile_Notifications}
             />
-            <Route path="/profile/details" component={Profile_AccountDetails} />
-            <Route path="/profile/privacy" component={Profile_PrivacyData} />
+
             {/* Achievements screens */}
+            <Route path="/achievements/all" component={Achievements_All} />
+            <Route path="/achievements/share" component={Achievements_Share} />
             <Route
               path="/achievements/timeline"
               component={Achievements_Timeline}
             />
-            <Route path="/achievements/all" component={Achievements_All} />
           </Switch>
         </Router>
       </div>
