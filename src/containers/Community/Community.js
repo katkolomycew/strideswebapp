@@ -26,7 +26,7 @@ class Community extends Component {
 
   render() {
     return (
-      <div id="community_wrapper">
+      <div className="community_wrapper">
         <ReturnIcon />
         <Logo imgSize="sm" />
         <i className="fas fa-users community-icon"></i>

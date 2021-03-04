@@ -12,6 +12,7 @@ import Profile_AccountDetails from "../Profile/Profile_AccountDetails/Profile_Ac
 import Profile_Notifications from "../Profile/Profile_Notifications/Profile_Notifications";
 import Profile_PrivacyData from "../Profile/Profile_PrivacyData/Profile_PrivacyData";
 import Signup from "../Signup/Signup";
+import SuccessStories from "../Community/SuccessStories/SuccessStories";
 import Welcome_New from "../Welcome/Welcome_New/Welcome_New";
 import Welcome_User from "../Welcome/Welcome_User/Welcome_User";
 
@@ -59,6 +60,7 @@ class App extends Component {
 
             {/* Community screens */}
             <Route path="/community/forums" component={Community} />
+            <Route path="/community/success" component={SuccessStories} />
           </Switch>
         </Router>
       </div>
