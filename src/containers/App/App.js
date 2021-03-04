@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Achievements_All from "../Achievements/Achievements_All/Achievements_All";
 import Achievements_Share from "../Achievements/Achievements_Share/Achievements_Share";
 import Achievements_Timeline from "../Achievements/Achievements_Timeline/Achievements_Timeline";
+import Community from "../Community/Community";
 import Home from "../Home/Home";
 import LoadingScreen from "../../components/LoadingScreen/LoadingScreen";
 import Login from "../Login/Login";
@@ -55,6 +56,9 @@ class App extends Component {
               path={["/achievements/timeline", "/achievements/continue"]}
               component={Achievements_Timeline}
             />
+
+            {/* Community screens */}
+            <Route path="/community/forums" component={Community} />
           </Switch>
         </Router>
       </div>

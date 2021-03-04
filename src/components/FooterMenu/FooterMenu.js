@@ -18,7 +18,7 @@ class FooterMenu extends Component {
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/" eventKey="link-2">
+            <Nav.Link href="/community/forums" eventKey="link-2">
               <i className="fas fa-users footer-icon"></i>
               Community
             </Nav.Link>

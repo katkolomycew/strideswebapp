@@ -32,6 +32,7 @@ body {
   position: absolute;
   top: 0.25rem;
   left: 0.25rem;
+  z-index: 5;
 }
 
 .profile-icon.lg {
