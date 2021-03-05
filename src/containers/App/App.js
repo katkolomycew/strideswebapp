@@ -13,6 +13,7 @@ import Profile_Notifications from "../Profile/Profile_Notifications/Profile_Noti
 import Profile_PrivacyData from "../Profile/Profile_PrivacyData/Profile_PrivacyData";
 import Signup from "../Signup/Signup";
 import SuccessStories from "../Community/SuccessStories/SuccessStories";
+import UserPlans_New from "../UserPlans/UserPlans_New/UserPlans_New";
 import Welcome_New from "../Welcome/Welcome_New/Welcome_New";
 import Welcome_User from "../Welcome/Welcome_User/Welcome_User";
 
@@ -32,16 +33,19 @@ class App extends Component {
       <div>
         <Router>
           <Switch>
-            {/* Root menus nav */}
+            {/* Root menus */}
             <Route path="/" exact component={Home} />
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
 
-            {/* Welcome screens nav */}
+            {/* Welcome screens */}
             <Route path="/welcome/new" component={Welcome_New} />
             <Route path="/welcome/user" component={Welcome_User} />
 
-            {/* Profile nav screens*/}
+            {/* User screens */}
+            <Route path="/user/newplan" component={UserPlans_New} />
+
+            {/* Profile screens*/}
             <Route path="/profile/account" component={Profile} />
             <Route path="/profile/details" component={Profile_AccountDetails} />
             <Route path="/profile/privacy" component={Profile_PrivacyData} />
