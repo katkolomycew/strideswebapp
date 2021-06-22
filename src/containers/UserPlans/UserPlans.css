@@ -99,3 +99,19 @@
   bottom: -7rem;
   margin-bottom: 8rem;
 }
+
+.userplan_time-wrapper {
+  display: flex;
+  position: relative;
+  top: 6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.userplan_time-button {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+}

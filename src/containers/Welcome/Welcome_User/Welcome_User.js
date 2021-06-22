@@ -27,7 +27,12 @@ class Welcome_User extends Component {
           </small>
         </div>
         <div className="mb-2 centered-button">
-          <Button variant="primary" size="lg" id="start-button">
+          <Button
+            variant="primary"
+            size="lg"
+            id="start-button"
+            href="/user/plans"
+          >
             Start
           </Button>
         </div>

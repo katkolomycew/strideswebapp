@@ -13,6 +13,7 @@ import Profile_Notifications from "../Profile/Profile_Notifications/Profile_Noti
 import Profile_PrivacyData from "../Profile/Profile_PrivacyData/Profile_PrivacyData";
 import Signup from "../Signup/Signup";
 import SuccessStories from "../Community/SuccessStories/SuccessStories";
+import UserPlans from "../UserPlans/UserPlans";
 import UserPlans_New from "../UserPlans/UserPlans_New/UserPlans_New";
 import Welcome_New from "../Welcome/Welcome_New/Welcome_New";
 import Welcome_User from "../Welcome/Welcome_User/Welcome_User";
@@ -53,6 +54,9 @@ class App extends Component {
               path="/profile/notifications"
               component={Profile_Notifications}
             />
+
+            {/* User plans screens */}
+            <Route path="/user/plans" component={UserPlans} />
 
             {/* Achievements screens */}
             <Route path="/achievements/all" component={Achievements_All} />
