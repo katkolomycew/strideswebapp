@@ -7,7 +7,7 @@ import "./UserPlans.css";
 
 class UserPlans extends Component {
   handleNewPlan = () => {
-    alert("wtf");
+    this.props.history.push("/user/newplan");
   };
 
   handleMonthPlan = () => {

@@ -31,7 +31,7 @@ class Welcome_User extends Component {
             variant="primary"
             size="lg"
             id="start-button"
-            href="/user/plans"
+            href="/user/newplan"
           >
             Start
           </Button>

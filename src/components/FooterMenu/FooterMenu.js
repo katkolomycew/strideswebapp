@@ -9,7 +9,7 @@ class FooterMenu extends Component {
         <Nav className="justify-content-center">
           <Nav.Item>
             <i className="far fa-calendar-alt footer-icon"></i>
-            <Nav.Link href="/">My Plans</Nav.Link>
+            <Nav.Link href="/user/plans">My Plans</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link href="/achievements/timeline" eventKey="link-1">

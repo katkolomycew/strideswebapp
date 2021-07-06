@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import Logo from "../../../components/Logo/Logo";
 import ReturnIcon from "../../../components/ReturnIcon/ReturnIcon";
+import Chart from "../../../components/Chart/Chart";
 import "./Achievements_Timeline.css";
 
 const timelineURL = window.location.href.includes("timeline");
@@ -16,7 +17,9 @@ class Achievements_Timeline extends Component {
         <h1 id="achievements-title">
           {timelineURL ? "Achievements" : "Rachel's Achievements"}
         </h1>
-        <div className="temporary-timeline"></div>
+        <div className="temporary-timeline">
+          <Chart />
+        </div>
         <h1 className="awards-title">
           {timelineURL ? "Awards" : "Top Awards"}
         </h1>
