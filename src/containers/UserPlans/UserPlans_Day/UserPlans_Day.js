@@ -1,15 +1,11 @@
 import React, { Component } from "react";
-import Calendar from "../../components/Calendar/Calendar";
-import Logo from "../../components/Logo/Logo";
-import NewIcon from "../../components/NewIcon/NewIcon";
-import ReturnIcon from "../../components/ReturnIcon/ReturnIcon";
-import "./UserPlans.css";
+import Calendar from "../../../components/Calendar/Calendar";
+import Logo from "../../../components/Logo/Logo";
+import NewIcon from "../../../components/NewIcon/NewIcon";
+import ReturnIcon from "../../../components/ReturnIcon/ReturnIcon";
+import "../UserPlans.css";
 
-class UserPlans extends Component {
-  handleNewPlan = () => {
-    alert("wtf");
-  };
-
+class UserPlansDay extends Component {
   handleMonthPlan = () => {
     return window.location.href.includes("plans")
       ? window.location.reload()
@@ -53,15 +49,15 @@ class UserPlans extends Component {
             Day
           </button>
         </div>
-        <span className="userplan_month-label">September</span>
+        <span className="userplan_day-label">Monday</span>
         <Calendar />
-        <span className="userplan_month-label">October</span>
+        <span className="userplan_day-label">Tuesday</span>
         <Calendar />
-        <span className="userplan_month-label">November</span>
+        <span className="userplan_day-label">Wednesday</span>
         <Calendar />
       </div>
     );
   }
 }
 
-export default UserPlans;
+export default UserPlansDay;

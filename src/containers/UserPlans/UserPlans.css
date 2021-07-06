@@ -115,3 +115,20 @@
   padding: 0.5rem 1rem;
   margin: 0 1rem;
 }
+
+.userplan_month-label,
+.userplan_week-label,
+.userplan_day-label {
+  position: relative;
+  top: 8rem;
+  left: 9.5rem;
+  font-weight: bold;
+}
+
+.label-short {
+  left: 7rem;
+}
+
+.label-long {
+  left: 4.5rem;
+}

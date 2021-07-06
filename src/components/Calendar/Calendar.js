@@ -8,11 +8,7 @@ const calendar = (props) => {
 
   return (
     <div className="calendar_wrapper">
-      <Calendar
-        onChange={onChange}
-        value={value}
-        onClickDay={props.clickedDay}
-      />
+      <Calendar onChange={onChange} value={value} />
     </div>
   );
 };

@@ -17,6 +17,8 @@ import UserPlans from "../UserPlans/UserPlans";
 import UserPlans_New from "../UserPlans/UserPlans_New/UserPlans_New";
 import Welcome_New from "../Welcome/Welcome_New/Welcome_New";
 import Welcome_User from "../Welcome/Welcome_User/Welcome_User";
+import UserPlansWeek from "../UserPlans/UserPlans_Week/UserPlans_Week";
+import UserPlansDay from "../UserPlans/UserPlans_Day/UserPlans_Day";
 
 class App extends Component {
   state = {
@@ -45,6 +47,9 @@ class App extends Component {
 
             {/* User screens */}
             <Route path="/user/newplan" component={UserPlans_New} />
+            <Route path="/user/plans" component={UserPlans} />
+            <Route path="/user/week" component={UserPlansWeek} />
+            <Route path="/user/day" component={UserPlansDay} />
 
             {/* Profile screens*/}
             <Route path="/profile/account" component={Profile} />
@@ -54,9 +59,6 @@ class App extends Component {
               path="/profile/notifications"
               component={Profile_Notifications}
             />
-
-            {/* User plans screens */}
-            <Route path="/user/plans" component={UserPlans} />
 
             {/* Achievements screens */}
             <Route path="/achievements/all" component={Achievements_All} />
