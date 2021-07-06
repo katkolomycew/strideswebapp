@@ -21,13 +21,18 @@ class Welcome_User extends Component {
           Today's Activity
         </div>
         <div id="welcome-user_activity">
-          <i class="fas fa-walking"></i>
+          <i className="fas fa-walking"></i>
           <small>
             20 Min <br /> Run <br /> Easy Pace
           </small>
         </div>
         <div className="mb-2 centered-button">
-          <Button variant="primary" size="lg" id="start-button">
+          <Button
+            variant="primary"
+            size="lg"
+            id="start-button"
+            href="/user/newplan"
+          >
             Start
           </Button>
         </div>

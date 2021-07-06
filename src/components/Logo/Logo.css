@@ -5,6 +5,7 @@
   top: 20%;
   left: 50%;
   transform: translate(-50%);
+  /* z-index: 5; */
 }
 
 #logo_img {

@@ -1,0 +1,134 @@
+.userplans_wrapper {
+  width: 375px;
+  height: 667px;
+  background-color: #b8ebb8;
+  overflow-y: scroll;
+}
+
+.userplan_icon {
+  font-size: 5rem;
+  position: relative;
+  top: 5rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.userplan_title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  position: relative;
+  top: 5.5rem;
+}
+
+.userplan_user-wrapper {
+  text-align: center;
+  position: relative;
+  top: 5.75rem;
+  line-height: 0.5rem;
+  font-style: italic;
+}
+
+.userplan_questions-wrapper {
+  text-align: justify;
+  position: relative;
+  font-size: 1.25rem;
+  top: 7rem;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.userplan_questions-wrapper p {
+  margin-top: 1rem;
+}
+
+.question {
+  margin: 0 4rem;
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: -0.75rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.question.left {
+  background-color: #ffffff;
+}
+
+.question.right {
+  background-color: #4a904a;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  border-radius: 10px;
+  padding: 0.5rem;
+  position: relative;
+  top: -1rem;
+  left: 1.5rem;
+  margin-top: -3rem;
+}
+
+.form::before {
+  font-family: "Font Awesome 5 Free";
+  color: #ffffff;
+  font-weight: 900;
+  content: "\f04d";
+  position: relative;
+  font-size: 2rem;
+  top: 2.25rem;
+  left: -2rem;
+}
+
+.form.active::before {
+  color: #4a904a;
+}
+
+.userplan_button {
+  background-color: #fff !important;
+  border-color: #000000;
+  border-radius: 8rem;
+  font-size: 1.3rem !important;
+  height: 55px;
+  position: relative;
+  bottom: -7rem;
+  margin-bottom: 8rem;
+}
+
+.userplan_time-wrapper {
+  display: flex;
+  position: relative;
+  top: 6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.userplan_time-button {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+}
+
+.userplan_month-label,
+.userplan_week-label,
+.userplan_day-label {
+  position: relative;
+  top: 8rem;
+  left: 9.5rem;
+  font-weight: bold;
+}
+
+.label-short {
+  left: 7rem;
+}
+
+.label-long {
+  left: 4.5rem;
+}

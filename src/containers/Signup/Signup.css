@@ -1,3 +1,11 @@
 #input-btn_wrapper {
   padding: 4rem 2rem;
 }
+
+#input-share_wrapper {
+  padding: 7rem 2rem;
+}
+
+#input-share_wrapper .input-group-lg {
+  margin-top: -1.5rem;
+}
