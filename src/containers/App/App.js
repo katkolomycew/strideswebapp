@@ -11,6 +11,7 @@ import Profile from "../Profile/Profile";
 import Profile_AccountDetails from "../Profile/Profile_AccountDetails/Profile_AccountDetails";
 import Profile_Notifications from "../Profile/Profile_Notifications/Profile_Notifications";
 import Profile_PrivacyData from "../Profile/Profile_PrivacyData/Profile_PrivacyData";
+import Profile_Support from "../Profile/Profile_Support/Profile_Support";
 import Signup from "../Signup/Signup";
 import SuccessStories from "../Community/SuccessStories/SuccessStories";
 import UserPlans from "../UserPlans/UserPlans";
@@ -19,6 +20,9 @@ import Welcome_New from "../Welcome/Welcome_New/Welcome_New";
 import Welcome_User from "../Welcome/Welcome_User/Welcome_User";
 import UserPlansWeek from "../UserPlans/UserPlans_Week/UserPlans_Week";
 import UserPlansDay from "../UserPlans/UserPlans_Day/UserPlans_Day";
+import SupportTypes from "../Support/Support_Types";
+import SupportMood from "../Support/Support_Mood";
+import SupportLevels from "../Support/Support_Levels";
 
 class App extends Component {
   state = {
@@ -51,14 +55,20 @@ class App extends Component {
             <Route path="/user/week" component={UserPlansWeek} />
             <Route path="/user/day" component={UserPlansDay} />
 
-            {/* Profile screens*/}
+            {/* Profile screens */}
             <Route path="/profile/account" component={Profile} />
             <Route path="/profile/details" component={Profile_AccountDetails} />
             <Route path="/profile/privacy" component={Profile_PrivacyData} />
+            <Route path="/profile/support" component={Profile_Support} />
             <Route
               path="/profile/notifications"
               component={Profile_Notifications}
             />
+
+            {/* Support subpages */}
+            <Route path="/support/intensity" component={SupportLevels} />
+            <Route path="/support/types" component={SupportTypes} />
+            <Route path="/support/mood" component={SupportMood} />
 
             {/* Achievements screens */}
             <Route path="/achievements/all" component={Achievements_All} />
