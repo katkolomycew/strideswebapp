@@ -18,12 +18,7 @@ class Welcome_New extends Component {
           You don't have a training plan yet
         </div>
         <div className="mb-2 centered-button">
-          <Button
-            variant="primary"
-            size="lg"
-            id="training-button"
-            href="/user/newplan"
-          >
+          <Button variant="primary" size="lg" id="training-button">
             Get Started!
           </Button>
         </div>

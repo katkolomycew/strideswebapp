@@ -56,6 +56,13 @@
   border-radius: 2rem;
 }
 
+#privacy_wrapper.transparent {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  text-align: justify;
+}
+
 #privacy_wrapper-text {
   height: 100%;
   overflow-y: scroll;
@@ -123,6 +130,27 @@
 
 .notifications_toggle.email {
   top: 32rem;
+}
+
+/* Support classes */
+.support-link {
+  text-decoration: none;
+  color: inherit;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 25%;
+  padding: 0.15rem;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.circle {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 100%;
+  padding: 0.25rem;
 }
 
 /* Bootstrap button overriden classes */
