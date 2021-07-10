@@ -1,16 +1,17 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { useHistory } from "react-router-dom";
 import "../../index.css";
 
 const ReturnIcon = () => {
-  let history = useHistory();
+  const history = useHistory();
+
   return (
-    <div>
+    <Fragment>
       <i
         className="fas fa-angle-double-left profile-icon sm"
         onClick={() => history.goBack()}
       ></i>
-    </div>
+    </Fragment>
   );
 };
 
