@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Achievements_All from "../Achievements/Achievements_All/Achievements_All";
 import Achievements_Share from "../Achievements/Achievements_Share/Achievements_Share";
@@ -24,72 +24,68 @@ import SupportTypes from "../Support/Support_Types";
 import SupportMood from "../Support/Support_Mood";
 import SupportLevels from "../Support/Support_Levels";
 
-class App extends Component {
-  state = {
-    loading: true,
-  };
+const App = () => {
+  const [loading, setLoading] = useState(true);
 
-  componentDidMount() {
-    demoAsyncCall().then(() => this.setState({ loading: false }));
-  }
+  useEffect(() => {
+    asyncLoadingCall().then(() => setLoading(false));
+  }, [loading]);
 
-  render() {
-    return this.state.loading ? (
-      <LoadingScreen />
-    ) : (
-      <div>
-        <Router>
-          <Switch>
-            {/* Root menus */}
-            <Route path="/" exact component={Home} />
-            <Route path="/signup" component={Signup} />
-            <Route path="/login" component={Login} />
+  return loading ? (
+    <LoadingScreen />
+  ) : (
+    <Fragment>
+      <Router>
+        <Switch>
+          {/* Root screens */}
+          <Route path="/" exact component={Home} />
+          <Route path="/signup" component={Signup} />
+          <Route path="/login" component={Login} />
 
-            {/* Welcome screens */}
-            <Route path="/welcome/new" component={Welcome_New} />
-            <Route path="/welcome/user" component={Welcome_User} />
+          {/* Welcome screens */}
+          <Route path="/welcome/new" component={Welcome_New} />
+          <Route path="/welcome/user" component={Welcome_User} />
 
-            {/* User screens */}
-            <Route path="/user/newplan" component={UserPlans_New} />
-            <Route path="/user/plans" component={UserPlans} />
-            <Route path="/user/week" component={UserPlansWeek} />
-            <Route path="/user/day" component={UserPlansDay} />
+          {/* User screens */}
+          <Route path="/user/newplan" component={UserPlans_New} />
+          <Route path="/user/plans" component={UserPlans} />
+          <Route path="/user/week" component={UserPlansWeek} />
+          <Route path="/user/day" component={UserPlansDay} />
 
-            {/* Profile screens */}
-            <Route path="/profile/account" component={Profile} />
-            <Route path="/profile/details" component={Profile_AccountDetails} />
-            <Route path="/profile/privacy" component={Profile_PrivacyData} />
-            <Route path="/profile/support" component={Profile_Support} />
-            <Route
-              path="/profile/notifications"
-              component={Profile_Notifications}
-            />
+          {/* Profile screens */}
+          <Route path="/profile/account" component={Profile} />
+          <Route path="/profile/details" component={Profile_AccountDetails} />
+          <Route path="/profile/privacy" component={Profile_PrivacyData} />
+          <Route path="/profile/support" component={Profile_Support} />
+          <Route
+            path="/profile/notifications"
+            component={Profile_Notifications}
+          />
 
-            {/* Support subpages */}
-            <Route path="/support/intensity" component={SupportLevels} />
-            <Route path="/support/types" component={SupportTypes} />
-            <Route path="/support/mood" component={SupportMood} />
+          {/* Support subpages */}
+          <Route path="/support/intensity" component={SupportLevels} />
+          <Route path="/support/types" component={SupportTypes} />
+          <Route path="/support/mood" component={SupportMood} />
 
-            {/* Achievements screens */}
-            <Route path="/achievements/all" component={Achievements_All} />
-            <Route path="/achievements/share" component={Achievements_Share} />
-            <Route
-              path={["/achievements/timeline", "/achievements/continue"]}
-              component={Achievements_Timeline}
-            />
+          {/* Achievements screens */}
+          <Route path="/achievements/all" component={Achievements_All} />
+          <Route path="/achievements/share" component={Achievements_Share} />
+          <Route
+            path={["/achievements/timeline", "/achievements/continue"]}
+            component={Achievements_Timeline}
+          />
 
-            {/* Community screens */}
-            <Route path="/community/forums" component={Community} />
-            <Route path="/community/success" component={SuccessStories} />
-          </Switch>
-        </Router>
-      </div>
-    );
-  }
-}
+          {/* Community screens */}
+          <Route path="/community/forums" component={Community} />
+          <Route path="/community/success" component={SuccessStories} />
+        </Switch>
+      </Router>
+    </Fragment>
+  );
+};
 
-function demoAsyncCall() {
+const asyncLoadingCall = () => {
   return new Promise((resolve) => setTimeout(() => resolve(), 3000));
-}
+};
 
 export default App;

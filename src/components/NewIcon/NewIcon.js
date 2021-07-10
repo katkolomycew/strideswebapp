@@ -1,7 +1,7 @@
 import React from "react";
 import "../../index.css";
 
-const newIcon = (props) => (
+const NewIcon = (props) => (
   <div>
     <i className="far fa-plus-square user-icon" onClick={props.clicked}></i>
     <p
@@ -17,4 +17,4 @@ const newIcon = (props) => (
   </div>
 );
 
-export default newIcon;
+export default NewIcon;
